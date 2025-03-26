@@ -14,4 +14,10 @@ the following form: YYYY.0M.0D.
 - Designed a Bird component
 - Designed a Playable Character component
 - Designed a Timeline component
+
+## 2024.03.24
+
+### Added
+
+- Designed a proof of concept for Bird Record/component
 ```
