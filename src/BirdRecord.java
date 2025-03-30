@@ -12,19 +12,30 @@ public class BirdRecord {
      * Bird record.
      *
      * @param species
-     * @param colors
+     * @param color
      * @param location
      */
     public record Bird(String species, String color, String location) {
 
     }
 
-    public Sequence<Bird> birds;
+    /**
+     * Sequence which holds all the birds.
+     */
+    private Sequence<Bird> birds;
 
+    /**
+     * Constructor.
+     */
     public BirdRecord() {
         this.birds = new Sequence1L<>();
     }
 
+    /**
+     * Adds bird to birds.
+     *
+     * @param b
+     */
     public void addBird(Bird b) {
         this.birds.add(0, b);
     }
