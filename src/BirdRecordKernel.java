@@ -9,7 +9,7 @@ public interface BirdRecordKernel extends Sequence<String> {
     /**
      * Birds.
      */
-    Sequence<Bird> Birds = new Sequence1L<>();
+    Sequence<Bird> BIRDS = new Sequence1L<>();
 
     /**
      * Bird record.
@@ -23,7 +23,7 @@ public interface BirdRecordKernel extends Sequence<String> {
     }
 
     /**
-     * Adds bird to birds.
+     * Adds bird to BIRDS.
      *
      * @param b
      */
