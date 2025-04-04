@@ -12,4 +12,13 @@ the following form: YYYY.0M.0D.
 
 - Designed kernel and enhanced interfaces for BirdRecord component
 
+### Updated
+
+- A couple of methods are different from proof of concept, and added a couple new methods
+
+## 2025.04.04
+
+### Added
+
+- Designed abstract class for BirdRecord component
 ```
