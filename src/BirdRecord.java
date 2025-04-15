@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Interface for BirdRecord.
  */
-public interface BirdRecord extends BirdRecordKernel {
+public interface BirdRecord extends BirdRecordKernel, Iterable<Bird> {
 
     /**
      * @param species

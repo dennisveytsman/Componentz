@@ -1,21 +1,9 @@
-import components.sequence.Sequence;
+import components.standard.Standard;
 
 /**
  * BirdRecordKernel interface.
  */
-public interface BirdRecordKernel extends Sequence<String> {
-
-    /**
-     * Bird record.
-     *
-     * @param species
-     * @param color
-     * @param location
-     * @ensures a Bird object is created with given inputs
-     */
-    public record Bird(String species, String color, String location) {
-
-    }
+public interface BirdRecordKernel extends Standard<BirdRecord> {
 
     /**
      * Adds bird to BIRDS.
@@ -28,23 +16,24 @@ public interface BirdRecordKernel extends Sequence<String> {
 
     /**
      * Removes bird from BIRDS.
-     * 
+     *
      * @requires BIRDS is not empty
      * @ensures BIRDS = #BIRDS - returned bird
+     * @return removed bird
      */
     Bird removeAnyBird();
 
     /**
      * Returns number of birds in BIRDS.
      *
-     * @param b
      * @ensures |BIRDS| is returned
+     * @return length of BIRDS
      */
     int numberOfBirds();
 
     /**
      *
-     * @param Bird
+     * @param bird
      * @return if BIRDS contains the Bird
      * @requires bird != null
      * @ensures that true is returned if BIRDS contains bird, and false if bird
