@@ -1,12 +1,11 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Dennis Veytsman
+- **Dot Number**: veytsman.3
+- **Due Date**: 02/04/25 @ 3PM EST
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +28,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +50,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +64,7 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
+
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,15 +103,12 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+I enjoy playing table tennis and chess. I like penguins and playing videogames, and while I basically only read when a book is recommended to me, I really enjoy reading. I played the piano and tennis for most of my life, but haven't played either since coming to OSU. I have tried many new hobbies over the last year or two, such as drawing, crocheting, and rock climbing, although the only one I am currently doing out of those is drawing. I am interested in music and enjoy finding good songs on Spotify.
+
+I am majoring in CSE because I knew I wanted to major in engineering but the other engineerings had one or two things each that I did not like. I consider myself to be a good ways above average in terms of academics, but I don't consider myself to be good at coding. In terms of what I want to do in the future, I might want to go into cybersecurity since I think there is less competition in this field and I don't think I am great at coding compared to other people who code. My current career goals are to get a job this summer for around 2 months at Target or somewhere similar, and then to get an internship somewhere for summer 2026.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -122,7 +116,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -132,7 +125,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +192,86 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Bird Record
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Holds information about a particular bird, such as its habitat and color.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void birdInfo(String species, String color, String location): adds info of the bird
+    - String getSpecies(): returns bird species
+    - String getColor(): returns bird color
+    - String getLocation(): returns bird location
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - String[] birdsOfAFeather(String color): returns the species of all birds of given color
+    - String informationOfBird(Bird bird): returns a string which puts the bird's information into an organized sentence
+    - int birdsInArea(String location): returns the number of bird species in a given location
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - The component would be mutable so that the bird's info can be changed when needed.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, this component would probably need many enums or constants, maybe preloaded birds for each species.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. I can implement the secondary methods by analyzing the bird component which has information from the kernel methods. An example would be the diet method which takes the information of the given bird and any needed enums/constants in order to return a suitable diet.
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+//not doing the playable character
+//not doing the playable character
+- Component Design #2: Playable Character
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Models the progression of traits of a playable character(I took this idea from the website that had examples).
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void newGame(): clears all traits and saves from the character
+    - void save(): saves the run so character doesn't lose current traits
+    - String lastSaved(): returns the last component before which the game was saved
+    - void update(): adds the next trait in the progression to the character
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - int traitCompletion(Player player): reports the percent of traits that the character has collected
+    - void death(Player player): returns the character to the last state when it was saved
+
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it would be mutable because the amount of the traits the character has will be changing.
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, this component does not need any internal classes since the player cannot be broken down into smaller parts.
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, it would need an enum or constant of all of the traits that the character could get.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, the kernel methods provide all of the info the secondary methods need in order to be implemented. For example, the death method relies on lastSaved in order to return the appropriate amount of traits that the character has.
+
+- Component Design #3: Timeline
+  - **Description**:
+    - Models the organization of events on a timeline
+  - **Kernel Methods**:
+    - void add(int time, String event): adds an event at given time
+    - String remove(int time): removes event at given time and returns the event
+    - boolean hasEvent(int time): checks if timeline has an event at a given time
+  - **Secondary Methods**:
+    - void alterEventTime(int time, int newTime): changes time of an event at the given time(by removing event at given time then adding it back at newTime)
+    - String[] events(): returns all events on timeline in order, possibly with the time each event occurs
+    - void swapEvents(int time, int time2): swaps the events of two different times
+
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, the event times and events would be added/removed/changed on the timeline
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - I don't know, but probably something like a Map.Pair would be needed to assign times to events.
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - I don't know.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, the kernel methods should provide enough info for the secondary methods. For example, events() can call getEvent() for each time on the timeline.
 
 ## Post-Assignment
 
@@ -270,7 +280,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -309,7 +318,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
@@ -319,11 +327,9 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
@@ -349,8 +355,6 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [example-components]: https://therenegadecoder.com/code/the-never-ending-list-of-small-programming-project-ideas/
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
