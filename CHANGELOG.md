@@ -21,4 +21,14 @@ the following form: YYYY.0M.0D.
 ### Added
 
 - Designed abstract class for BirdRecord component
+
+## 2025.04.18
+
+### Added
+
+- Designed kernel implementation for BirdRecord component
+
+### Updated
+
+- Updated BirdRecordKernel.java with Standard methods transferFrom, clear, and newInstance.
 ```
