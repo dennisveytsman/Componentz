@@ -1,3 +1,5 @@
+package components.birdrecord;
+
 import java.util.List;
 
 /**
