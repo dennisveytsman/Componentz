@@ -5,9 +5,11 @@ import java.util.List;
 /**
  * Kernel implementation.
  *
- * Convention:
+ * @convention The list of birds does not contain null entries
  *
- * Correspondence:
+ * @correspondence Each Bird object in the list of birds corresponds to a bird
+ *                 in the record. The list of birds is a collection of Bird
+ *                 objects.
  */
 public class BirdRecord1L extends BirdRecordSecondary {
     /**
