@@ -6,7 +6,7 @@ import components.sequence.Sequence1L;
 /**
  * Bird utility class.
  */
-public class BirdRecord {
+public class BirdRecordDemo {
 
     /**
      * Bird record.
@@ -27,7 +27,7 @@ public class BirdRecord {
     /**
      * Constructor.
      */
-    public BirdRecord() {
+    public BirdRecordDemo() {
         this.birds = new Sequence1L<>();
     }
 
@@ -84,7 +84,7 @@ public class BirdRecord {
      * @param args
      */
     public static void main(String[] args) {
-        BirdRecord birds = new BirdRecord();
+        BirdRecordDemo birds = new BirdRecordDemo();
 
         Bird bird = new Bird("Robin", "Red", "Illinois");
         System.out.println(bird.color());
